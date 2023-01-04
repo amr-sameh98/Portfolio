@@ -367,7 +367,7 @@ section {
   color: black;
 }
 
-.projects .content {
+.projects .cont {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 40px;
