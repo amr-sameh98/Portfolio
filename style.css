@@ -344,7 +344,6 @@ section {
   }
 }
 
-.projects .title,
 .projects .project-title {
   display: flex;
   justify-content: center;
@@ -352,23 +351,29 @@ section {
   font-weight: 500;
   margin-bottom: 10px;
 }
-.projects .title {
+/* .projects .title {
   color: #e68a00;
   margin-bottom: 30px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .projects .title {
     text-align: center;
     font-size: 1.5em;
   }
-}
+} */
 
 .projects .project-title {
   color: black;
 }
 
-.projects .html_css {
+.projects .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* .projects .html_css {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 40px;
@@ -378,9 +383,9 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 40px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .projects .html_css_js {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
@@ -397,12 +402,12 @@ section {
   .projects .boot_s {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
-}
+} */
 
-.projects .h_c_j,
+/* .projects .h_c_j,
 .projects .bs {
   margin-top: 50px;
-}
+} */
 
 .projects .box {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
@@ -422,6 +427,19 @@ section {
 .projects .box h3 {
   margin: 0;
   padding: 20px;
+}
+
+.projects .box p {
+  color: #3a6cf4;
+  font-weight: bold;
+  font-size: 0.7em;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects .box p span {
+  color: black;
 }
 
 .projects .box a {
