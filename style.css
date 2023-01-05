@@ -395,21 +395,31 @@ section {
   padding: 20px;
 }
 
-.projects .box p {
+.projects .box .techno {
+  color: black;
   color: #3a6cf4;
   font-weight: bold;
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
 
-.projects .box p span {
+.projects .box .techno span {
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .box .check-icon {
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  padding: 3px;
 }
 
 .projects .box a {
-  padding: 15px 10px 10px;
   border-top: 1px solid #e6e6e7;
   color: #fff;
   background-color: #3a6cf4;
@@ -420,13 +430,13 @@ section {
   padding: 0.9375em 2.1875em;
   letter-spacing: 1px;
   border-radius: 15px;
-  margin-bottom: 40px;
   transition: 0.7s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
   margin: auto;
+  margin-top: 30px;
 }
 
 /* Contact */
