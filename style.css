@@ -302,6 +302,12 @@ section {
   color: #f0db4f;
 }
 
+.api img,
+.json img {
+  width: 60px;
+  height: 60px;
+}
+
 .bootstrap {
   color: #563d7c;
 }
