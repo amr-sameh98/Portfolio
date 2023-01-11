@@ -37,16 +37,22 @@ header {
   font-size: 1.8em;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .logo {
     font-size: 1.2em;
   }
 }
 
+/* @media (min-width: 767px) and (max-width: 991px) {
+  .logo {
+    font-size: 1.7em;
+  }
+} */
+
 .navigation a {
   color: #3a6cf4;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 500;
   padding-left: 30px;
 }
@@ -74,7 +80,7 @@ section {
   padding: 100px 200px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   section {
     padding: 80px 20px;
   }
@@ -91,7 +97,7 @@ section {
   background-color: #00124d;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -106,10 +112,16 @@ section {
   font-weight: 500;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
   .main h2 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .main h2 {
+    font-size: 3em;
   }
 }
 
@@ -121,10 +133,30 @@ section {
   font-weight: 600;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 380px) {
+  .main h2 span {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 767px) {
   .main h2 span {
     font-size: 1.4em;
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .main h2 span {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
   }
 }
 
@@ -135,14 +167,31 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 400px) {
   .main h3 {
-    width: 300px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .main h3 {
     font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .main h3 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main h3 {
     text-align: center;
+    width: fit-content;
   }
 }
 
@@ -160,16 +209,27 @@ section {
   transition: 0.7s ease;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 400px) and (max-width: 575px) {
   .main-btn {
-    font-size: 0.9em;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .main-btn {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-btn {
     padding: 0.8em 1.8em;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: auto;
+    margin: 60px auto 10px;
   }
 }
 
@@ -182,7 +242,7 @@ section {
   margin-left: 60px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
   .social-icons {
     display: flex;
     justify-content: center;
@@ -197,11 +257,17 @@ section {
   padding-right: 30px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
   .social-icons a {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .social-icons .icon {
+    font-size: 1.8em;
   }
 }
 
@@ -216,24 +282,32 @@ section {
   margin-left: 60px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .main .image {
     min-width: 100px;
     min-height: 100px;
-    border: 2px solid white;
-    margin-left: 0;
   }
-}
-
-@media (max-width: 991px) {
   .main .image img {
     width: 250px;
   }
 }
 
-/* Skills */
-.skills {
+@media (min-width: 768px) and (max-width: 1300px) {
+  .main .image img {
+    width: 500px;
+  }
 }
+
+@media (max-width: 1300px) {
+  .main .image {
+    margin-top: 40px;
+    border: 2px solid white;
+    margin-left: 0;
+  }
+}
+
+/* Skills */
+
 .skills .title {
   display: flex;
   justify-content: center;
@@ -270,7 +344,7 @@ section {
   text-align: center;
 }
 
-.box:hover {
+.skills .box:hover {
   transform: scale(1.1);
 }
 
@@ -288,6 +362,12 @@ section {
 
 .icon-title {
   margin-top: 5px;
+}
+
+@media (max-width: 576px) {
+  .icon-title {
+    font-size: 1.2em;
+  }
 }
 
 .html {
@@ -387,6 +467,10 @@ section {
   transition: transform 0.3, box-shadow 0.3s;
 }
 
+.projects .box:hover {
+  transform: scale(1.1);
+}
+
 .projects img {
   width: 100%;
   height: 150px;
@@ -482,9 +566,9 @@ section {
   }
 }
 
-.contact .box:hover {
+/* .contact .box:hover {
   transform: scale(1.1);
-}
+} */
 
 .contact .box .icon {
   color: #3a6cf4;
@@ -503,9 +587,79 @@ section {
   margin: 10px;
 }
 
-.contact .info p {
+.contact .info .phone-num,
+.contact .info .email {
+  width: 315px;
   font-size: 1.5em;
+  text-align: center;
+  border: none;
+  outline: none;
+  margin-left: 28px;
 }
+
+@media (max-width: 575px) {
+  .contact .info .phone-num,
+  .contact .info .email {
+    width: 262px;
+    font-size: 1.3em;
+    margin-left: -10px;
+  }
+}
+
+.contact .info .phone-copy,
+.contact .info .email-copy {
+  padding: 7px;
+  background-color: #3a6cf4;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.contact .info .phone-copy:active,
+.contact .info .email-copy:active {
+  background-color: #00124d;
+}
+
+.contact .info .phone-copy::before,
+.contact .info .email-copy::before {
+  content: "copied";
+  position: absolute;
+  top: -50px;
+  right: -15px;
+  background-color: #5c81dc;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  display: none;
+}
+
+.contact .info .phone-copy::after,
+.contact .info .email-copy::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  background-color: #5c81dc;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.contact .info .phone-copy.active::before,
+.contact .info .phone-copy.active::after,
+.contact .info .email-copy.active::before,
+.contact .info .email-copy.active::after {
+  display: block;
+}
+
+/* .contact .info p {
+  font-size: 1.5em;
+} */
 
 /* Footer Section */
 .footer {

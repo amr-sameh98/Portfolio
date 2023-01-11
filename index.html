@@ -31,7 +31,7 @@
   <body>
     <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-md pb-0">
+      <nav class="navbar navbar-expand-lg pb-0">
         <a class="navbar-brand logo" href="#">AMR SAMEH</a>
         <button
           class="navbar-toggler"
@@ -46,9 +46,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto navigation">
-            <a class="nav-item nav-link me-4" href="#skills">Skills</a>
-            <a class="nav-item nav-link me-4" href="#projects">Projects</a>
-            <a class="nav-item nav-link me-4" href="#contact">Contact</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </nav>
@@ -66,10 +66,10 @@
         <a href="#projects" class="main-btn">View my work</a>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/amr-sameh-b53716233/"
-            ><i class="fab fa-linkedin"></i
+            ><i class="fab fa-linkedin icon"></i
           ></a>
           <a href="https://github.com/Amr-Zazu"
-            ><i class="fa-brands fa-github"></i
+            ><i class="fa-brands fa-github icon"></i
           ></a>
         </div>
       </div>
@@ -257,7 +257,10 @@
           </div>
           <div class="info">
             <h3>Phone</h3>
-            <p>+201026269601</p>
+            <input type="tel" class="phone-num" value="+201026269601" />
+            <button class="phone-copy">
+              <i class="fa-regular fa-copy"></i>
+            </button>
           </div>
         </div>
         <div class="box">
@@ -266,7 +269,10 @@
           </div>
           <div class="info">
             <h3>Email</h3>
-            <p>amrzazu98@gmail.com</p>
+            <input type="email" class="email" value="amrzazu98@gmail.com" />
+            <button class="email-copy">
+              <i class="fa-regular fa-copy"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -284,5 +290,8 @@
         ></a>
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="index.js"></script>
   </body>
 </html>
