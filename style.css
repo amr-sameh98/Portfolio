@@ -383,9 +383,21 @@ section {
 }
 
 .api img,
-.json img {
+.json img,
+.netCore img,
+.sqlServer img {
   width: 60px;
   height: 60px;
+}
+
+.oop img {
+  width: 90px;
+  height: 90px;
+}
+
+.asp img {
+  width: 120px;
+  height: 120px;
 }
 
 .bootstrap {
