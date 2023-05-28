@@ -613,6 +613,9 @@ section {
   outline: none;
   margin-left: 28px;
 }
+.contact .info .email {
+  font-size: 1.2em;
+}
 
 @media (max-width: 575px) {
   .contact .info .phone-num,
@@ -620,6 +623,9 @@ section {
     width: 262px;
     font-size: 1.3em;
     margin-left: -10px;
+  }
+  .contact .info .email {
+    font-size: 1em;
   }
 }
 
